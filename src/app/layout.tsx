@@ -40,6 +40,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
         {/* End Google Tag Manager */}
         <meta name="google-adsense-account" content="ca-pub-9870463298829321"></meta>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9870463298829321"
+     crossOrigin="anonymous"></script>
       </head>
       <body
         className="font-sans text-orange-300 antialiased bg-black min-h-screen flex flex-col"
