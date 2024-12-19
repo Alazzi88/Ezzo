@@ -28,7 +28,7 @@ const Indicator: React.FC = () => {
               تعرف على كيفية عمل مؤشرنا
             </h1>
             <p className="mt-4 text-lg text-gray-300 leading-relaxed">
-              مؤشرنا يعتمد على تقنيات الذكاء الصناعي لتقديم حلول متقدمة لتحليل الأسواق.
+              مؤشرنا يعتمد على تقنيات حديثه لتقديم حلول متقدمة لتحليل الأسواق.
               يوفر أدوات قوية لمساعدتك على اتخاذ قرارات استثمارية دقيقة.
             </p>
           </div>
@@ -82,9 +82,7 @@ const Indicator: React.FC = () => {
                 </li>
               </ul>
               <ul className="list-disc pl-6 space-y-4 text-gray-300 leading-relaxed">
-                <li>
-                  <strong className="text-orange-400">فيبوناتشي:</strong> دمج مستويات فيبوناتشي لتحليل الاتجاهات.
-                </li>
+            
                 <li>
                   <strong className="text-orange-400">مناطق العرض والطلب:</strong> الكشف عن المناطق الحرجة للنشاط السعري.
                 </li>
