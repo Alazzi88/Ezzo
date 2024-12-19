@@ -1,11 +1,20 @@
+// components/Advertisement.tsx
+
+import React from 'react';
+
 const Advertisement: React.FC = () => {
   return (
     <section className="relative mt-44 overflow-hidden rounded-full bg-gradient-to-r from-orange-500 to-yellow-400 py-14 text-center text-white shadow-lg">
       <div className="container mx-auto px-6">
-        <h2 className="mb-6 text-2xl font-extrabold tracking-wide drop-shadow-lg">
-          لا تفوّت أفضل العروض في متجرنا !
+        {/* نص العرض الرئيسي */}
+        <h2 className="mb-4 text-2xl font-extrabold tracking-wide drop-shadow-lg">
+          لا تفوّت أفضل العروض في متجرنا!
         </h2>
 
+        {/* نص عرض نهاية السنة بنسبة ٤٠٪ */}
+        <p className="mb-8 text-lg font-semibold text-white drop-shadow-md">
+          عرض نهاية السنة: خصم ٤٠٪ على جميع المنتجات
+        </p>
         <a
           href="https://3zzo.aryaf.sa/"
           target="_blank"

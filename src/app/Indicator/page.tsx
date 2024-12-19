@@ -111,21 +111,32 @@ const Indicator: React.FC = () => {
           </div>
 
           {/* Subscription Section */}
-          <div className="bg-gradient-to-b from-gray-800 to-black shadow-lg rounded-lg p-8 text-center">
-            <h3 className="text-2xl font-bold text-orange-500 mb-4">
+          <div className="container mx-auto px-4 py-8">
+            {/* العنوان الرئيسي */}
+            <h3 className="text-2xl font-bold text-orange-500 mb-8 text-center">
               اختر خطتك المناسبة
             </h3>
-            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              احصل على جميع المزايا التي تحتاجها لتحليل الأسواق بشكل احترافي.
-            </p>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gray-900 p-6 rounded-lg shadow-md text-center">
+              {/* الاشتراك الشهري */}
+              <div className="bg-gray-900 p-6 rounded-lg shadow-md text-center relative">
+                {/* وسم خصم نهاية السنة */}
+                <span className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  خصم 40%
+                </span>
+
                 <h4 className="text-xl font-semibold text-orange-400">
                   الاشتراك الشهري
                 </h4>
-                <p className="mt-4 text-2xl font-bold text-orange-500">
-                  249 ريال
-                </p>
+                {/* الأسعار */}
+                <div className="mt-4">
+                  <p className="text-gray-400 line-through text-sm">
+                    249 ريال
+                  </p>
+                  <p className="text-2xl font-bold text-orange-500">
+                    149 ريال
+                  </p>
+                </div>
                 <p className="mt-2 text-gray-400">شهر واحد</p>
                 <a
                   href="https://3zzo.aryaf.sa/product/%D9%85%D8%A4%D8%B4%D8%B1-%D9%84%D9%84%D8%AA%D8%AF%D8%A7%D9%88%D9%84"
@@ -136,13 +147,26 @@ const Indicator: React.FC = () => {
                   اشترك الآن
                 </a>
               </div>
-              <div className="bg-gray-900 p-6 rounded-lg shadow-md text-center">
+
+              {/* الاشتراك السنوي */}
+              <div className="bg-gray-900 p-6 rounded-lg shadow-md text-center relative">
+                {/* وسم خصم نهاية السنة */}
+                <span className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  خصم 40%
+                </span>
+
                 <h4 className="text-xl font-semibold text-orange-400">
                   الاشتراك السنوي
                 </h4>
-                <p className="mt-4 text-2xl font-bold text-orange-500">
-                  1499 ريال
-                </p>
+                {/* الأسعار */}
+                <div className="mt-4">
+                  <p className="text-gray-400 line-through text-sm">
+                    1499 ريال
+                  </p>
+                  <p className="text-2xl font-bold text-orange-500">
+                    899 ريال
+                  </p>
+                </div>
                 <p className="mt-2 text-gray-400">سنة كاملة</p>
                 <a
                   href="https://3zzo.aryaf.sa/product/%D9%85%D8%A4%D8%B4%D8%B1-%D9%84%D9%84%D8%AA%D8%AF%D8%A7%D9%88%D9%84-3"
@@ -154,9 +178,22 @@ const Indicator: React.FC = () => {
                 </a>
               </div>
             </div>
-            <p className="text-sm text-gray-400 mt-4">
-              المنتج غير قابل للاسترداد
-            </p>
+
+            {/* قسم ترويج خصم نهاية السنة */}
+            <div className="mt-12 p-6 bg-gradient-to-r from-orange-500 to-yellow-400 rounded-lg shadow-lg text-center">
+              <h2 className="text-3xl font-bold text-white mb-4">
+                احتفل معنا بخصم نهاية السنة!
+              </h2>
+              <p className="text-lg text-white">
+                اغتنم الفرصة واشترك الآن للاستفادة من أفضل العروض قبل نهاية العام.
+              </p>
+              <a
+                href="https://3zzo.aryaf.sa/"
+                className="mt-6 inline-block px-6 py-3 bg-white text-orange-500 font-semibold rounded-lg shadow hover:bg-gray-100 transition"
+              >
+                اكتشف المزيد
+              </a>
+            </div>
           </div>
         </div>
       </div>
