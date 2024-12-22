@@ -39,9 +39,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           })(window,document,'script','dataLayer','GTM-MQRDBB3V');`}
         </Script>
         {/* End Google Tag Manager */}
+
+        {/* Google Ads Tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-10851552359"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-10851552359');
+          `}
+        </Script>
+        {/* End Google Ads Tag */}
+
         <meta name="google-adsense-account" content="ca-pub-9870463298829321"></meta>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9870463298829321"
-     crossOrigin="anonymous"></script>
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9870463298829321"
+          async
+          crossOrigin="anonymous"
+        ></Script>
       </head>
       <body
         className="font-sans text-orange-300 antialiased bg-black min-h-screen flex flex-col"
@@ -67,8 +86,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ScrollToTop />
 
         <Script
-          async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}`}
+          async
           crossOrigin="anonymous"
         />
       </body>
