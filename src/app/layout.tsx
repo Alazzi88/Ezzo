@@ -91,6 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
         {/* End Google Ads Tag */}
 
+        {/* حساب AdSense مباشرة بدون ملف env */}
         <meta name="google-adsense-account" content="ca-pub-9870463298829321" />
         <Script
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9870463298829321"
@@ -98,6 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
         />
       </head>
+
       <body className="font-sans text-orange-300 antialiased bg-black min-h-screen flex flex-col">
         {/* Google Tag Manager (noscript) */}
         <noscript>
@@ -118,12 +120,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <Footer />
         <ScrollToTop />
-
-        <Script
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}`}
-          async
-          crossOrigin="anonymous"
-        />
       </body>
     </html>
   );
