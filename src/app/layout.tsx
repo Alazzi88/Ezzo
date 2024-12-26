@@ -28,11 +28,51 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           content="مؤشر تداول, تحليلات فنية, أدوات تداول..."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Ezzo - اكتشف التحليل الفني للتداول" />
+        <meta
+          property="og:description"
+          content="دليل شامل لأفضل المؤشرات وأدوات التحليل الفني للمتداولين."
+        />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://example.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ezzo - التحليل الفني للتداول" />
+        <meta
+          name="twitter:description"
+          content="دليل شامل لأفضل المؤشرات وأدوات التحليل الفني للمتداولين."
+        />
+        <meta
+          name="twitter:image"
+          content="https://example.com/your-image-twitter.jpg"
+        />
+
         <link rel="icon" href="/favicon.ico" />
+
+        {/* Structured Data (JSON-LD) */}
+        <Script id="structured-data" type="application/ld+json" strategy="afterInteractive">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Ezzo",
+              "url": "https://example.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://example.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }
+          `}
+        </Script>
 
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
-          {`(function(w,d,s,l,i){...})(window,document,'script','dataLayer','GTM-MQRDBB3V');`}
+          {`(function(w,d,s,l,i){/* كود Google Tag Manager */})(window,document,'script','dataLayer','GTM-MQRDBB3V');`}
         </Script>
         {/* End Google Tag Manager */}
 
@@ -51,16 +91,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
         {/* End Google Ads Tag */}
 
-        <meta name="google-adsense-account" content="ca-pub-9870463298829321"></meta>
+        <meta name="google-adsense-account" content="ca-pub-9870463298829321" />
         <Script
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9870463298829321"
           async
           crossOrigin="anonymous"
-        ></Script>
+        />
       </head>
-      <body
-        className="font-sans text-orange-300 antialiased bg-black min-h-screen flex flex-col"
-      >
+      <body className="font-sans text-orange-300 antialiased bg-black min-h-screen flex flex-col">
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
