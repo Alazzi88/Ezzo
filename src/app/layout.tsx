@@ -35,12 +35,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           property="og:description"
           content="دليل شامل لأفضل المؤشرات وأدوات التحليل الفني للمتداولين."
         />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://example.com" />
+        <meta property="og:url" content="https://3zzo.com" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Ezzo - التحليل الفني للتداول" />
         <meta
           name="twitter:description"
@@ -60,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "Ezzo",
-              "url": "https://example.com",
+              "url": "https://3zzo.com",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": "https://example.com/search?q={search_term_string}",
@@ -98,6 +96,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           async
           crossOrigin="anonymous"
         />
+
+        {/* إضافة كود AMP Auto Ads في الـ head */}
+        <script
+          async
+          custom-element="amp-auto-ads"
+          src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
+        />
       </head>
 
       <body className="font-sans text-orange-300 antialiased bg-black min-h-screen flex flex-col">
@@ -111,6 +116,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           ></iframe>
         </noscript>
         {/* End Google Tag Manager (noscript) */}
+
+        {/* إضافة الـ amp-auto-ads في الـ body */}
+        <amp-auto-ads
+          type="adsense"
+          data-ad-client="ca-pub-9870463298829321"
+        ></amp-auto-ads>
 
         <Header />
         <main className="flex-grow bg-black mt-2 px-0 py-8">

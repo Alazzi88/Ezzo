@@ -25,7 +25,7 @@ const AdUnit: React.FC<AdUnitProps> = ({ slotId, format = 'auto', responsive = t
     <ins
       className="adsbygoogle"
       style={{ display: 'block', ...style }}
-      data-ad-client="ca-pub-2539958063286229"
+      data-ad-client="ca-pub-9870463298829321"
       data-ad-slot={slotId}
       data-ad-format={format}
       data-full-width-responsive={responsive ? 'true' : 'false'}
