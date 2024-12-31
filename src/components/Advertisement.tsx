@@ -12,9 +12,7 @@ const Advertisement: React.FC = () => {
         </h2>
 
         {/* نص عرض نهاية السنة بنسبة ٤٠٪ */}
-        <p className="mb-8 text-lg font-semibold text-white drop-shadow-md">
-          عرض نهاية السنة: خصم ٤٠٪ على جميع المنتجات
-        </p>
+      
         <a
           href="https://3zzo.aryaf.sa/"
           target="_blank"

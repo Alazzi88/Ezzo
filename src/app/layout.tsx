@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Almarai } from "next/font/google";
@@ -37,17 +38,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <meta property="og:url" content="https://3zzo.com" />
         <meta property="og:type" content="website" />
-
-        {/* Twitter Card Meta Tags */}
-        <meta name="twitter:title" content="Ezzo - التحليل الفني للتداول" />
-        <meta
-          name="twitter:description"
-          content="دليل شامل لأفضل المؤشرات وأدوات التحليل الفني للمتداولين."
-        />
-        <meta
-          name="twitter:image"
-          content="https://example.com/your-image-twitter.jpg"
-        />
 
         <link rel="icon" href="/favicon.ico" />
 
@@ -90,12 +80,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* End Google Ads Tag */}
 
         {/* حساب AdSense مباشرة بدون ملف env */}
-        <meta name="google-adsense-account" content="ca-pub-9870463298829321" />
-        <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9870463298829321"
-          async
-          crossOrigin="anonymous"
-        />
+        <meta name="google-adsense-account" content="ca-pub-9870463298829321"></meta>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9870463298829321"
+          crossOrigin="anonymous"></script>
 
         {/* إضافة كود AMP Auto Ads في الـ head */}
         <script

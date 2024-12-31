@@ -119,21 +119,16 @@ const Indicator: React.FC = () => {
               {/* الاشتراك الشهري */}
               <div className="bg-gray-900 p-6 rounded-lg shadow-md text-center relative">
                 {/* وسم خصم نهاية السنة */}
-                <span className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                  خصم 40%
-                </span>
-
+    
                 <h4 className="text-xl font-semibold text-orange-400">
                   الاشتراك الشهري
                 </h4>
                 {/* الأسعار */}
                 <div className="mt-4">
-                  <p className="text-gray-400 line-through text-sm">
+                  <p className="text-gray-400  text-sm">
                     249 ريال
                   </p>
-                  <p className="text-2xl font-bold text-orange-500">
-                    149 ريال
-                  </p>
+            
                 </div>
                 <p className="mt-2 text-gray-400">شهر واحد</p>
                 <a
@@ -149,21 +144,17 @@ const Indicator: React.FC = () => {
               {/* الاشتراك السنوي */}
               <div className="bg-gray-900 p-6 rounded-lg shadow-md text-center relative">
                 {/* وسم خصم نهاية السنة */}
-                <span className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                  خصم 40%
-                </span>
+      
 
                 <h4 className="text-xl font-semibold text-orange-400">
                   الاشتراك السنوي
                 </h4>
                 {/* الأسعار */}
                 <div className="mt-4">
-                  <p className="text-gray-400 line-through text-sm">
+                  <p className="text-gray-400  text-sm">
                     1499 ريال
                   </p>
-                  <p className="text-2xl font-bold text-orange-500">
-                    899 ريال
-                  </p>
+                
                 </div>
                 <p className="mt-2 text-gray-400">سنة كاملة</p>
                 <a
@@ -179,12 +170,8 @@ const Indicator: React.FC = () => {
 
             {/* قسم ترويج خصم نهاية السنة */}
             <div className="mt-12 p-6 bg-gradient-to-r from-orange-500 to-yellow-400 rounded-lg shadow-lg text-center">
-              <h2 className="text-3xl font-bold text-white mb-4">
-                احتفل معنا بخصم نهاية السنة!
-              </h2>
-              <p className="text-lg text-white">
-                اغتنم الفرصة واشترك الآن للاستفادة من أفضل العروض قبل نهاية العام.
-              </p>
+          
+      
               <a
                 href="https://3zzo.aryaf.sa/"
                 className="mt-6 inline-block px-6 py-3 bg-white text-orange-500 font-semibold rounded-lg shadow hover:bg-gray-100 transition"
