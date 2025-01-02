@@ -4,17 +4,22 @@ import Image from 'next/image';
 const Indicator: React.FC = () => {
   const videos = [
     {
-      url: "https://www.youtube.com/embed/wp4Rb0jwY_k",
+      url: "https://www.youtube.com/embed/IWymWx4kYs0?si=2zHXkwnIpjbt172G",
       title: "الشرح الأول",
     },
     {
-      url: "https://www.youtube.com/embed/BKvL8kzuPpU",
+      url: "https://www.youtube.com/embed/szgRHJ8sD-w?si=cltQTk44MrTWXPKS",
       title: "الشرح الثاني",
     },
     {
-      url: "https://www.youtube.com/embed/szgRHJ8sD-w",
+      url: "https://www.youtube.com/embed/BKvL8kzuPpU?si=s9eFf45zOKTCFor7",
       title: "الشرح الثالث",
     },
+    {
+      url: "https://www.youtube.com/embed/wp4Rb0jwY_k?si=MPS82tz6iENpF-wN",
+      title: "الشرح الرابع",
+    },
+
   ];
 
   return (
