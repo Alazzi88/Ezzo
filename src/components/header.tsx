@@ -72,7 +72,7 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-lg font-medium text-orange-300 transition hover:bg-orange-500 hover:text-black px-4 py-2 rounded-md font-sans flex items-center gap-1"
+              className="text-lg font-medium text-orange-400 transition hover:bg-orange-500 hover:text-black px-4 py-2 rounded-md font-sans flex items-center gap-1"
             >
               {item.name}
               {item.badge && (
@@ -89,7 +89,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="inline-flex items-center justify-center rounded-md p-2 text-orange-300 hover:text-orange-500 focus:outline-none"
+            className="inline-flex items-center justify-center rounded-md p-2 text-orange-500 hover:text-orange-500 focus:outline-none"
           >
             <svg
               className="h-7 w-7"
@@ -146,7 +146,7 @@ export default function Header() {
                   <button
                     type="button"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="rounded-md p-2 text-orange-300 hover:text-orange-500 focus:outline-none"
+                    className="rounded-md p-2 text-orange-500 hover:text-orange-500 focus:outline-none"
                   >
                     <XMarkIcon aria-hidden="true" className="h-6 w-6" />
                   </button>
@@ -156,7 +156,7 @@ export default function Header() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="block text-lg font-semibold text-orange-300 transition hover:bg-orange-500 hover:text-black px-3 py-2 rounded-md font-sans items-center gap-1"
+                      className="block text-lg font-semibold text-orange-400 transition hover:bg-orange-500 hover:text-black px-3 py-2 rounded-md font-sans items-center gap-1"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
