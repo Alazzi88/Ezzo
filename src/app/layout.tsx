@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Almarai } from "next/font/google";
@@ -60,7 +59,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
-          {`(function(w,d,s,l,i){/* كود Google Tag Manager */})(window,document,'script','dataLayer','GTM-MQRDBB3V');`}
+          {`
+            (function(w,d,s,l,i){
+              w[l]=w[l]||[];
+              w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],
+                  j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MQRDBB3V');
+          `}
         </Script>
         {/* End Google Tag Manager */}
 
@@ -79,16 +87,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
         {/* End Google Ads Tag */}
 
-        {/* حساب AdSense مباشرة بدون ملف env */}
-        <meta name="google-adsense-account" content="ca-pub-9870463298829321"></meta>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9870463298829321"
-          crossOrigin="anonymous"></script>
-
-        {/* إضافة كود AMP Auto Ads في الـ head */}
-        <script
-          async
-          custom-element="amp-auto-ads"
-          src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
+        {/* حساب AdSense: سكربت العادي (بدون AMP) */}
+        <meta name="google-adsense-account" content="ca-pub-9870463298829321" />
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9870463298829321"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
         />
       </head>
 
@@ -104,20 +108,30 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </noscript>
         {/* End Google Tag Manager (noscript) */}
 
-        {/* إضافة الـ amp-auto-ads في الـ body */}
-        <amp-auto-ads
-          type="adsense"
-          data-ad-client="ca-pub-9870463298829321"
-        ></amp-auto-ads>
-
+        {/* بداية محتوى الصفحة */}
         <Header />
         <main className="flex-grow bg-black mt-2 px-0 py-8">
-          <div className="max-w-100 mx-auto bg-black p-0 rounded-lg shadow-md">
+          <div className="max-w-full mx-auto bg-black p-0 rounded-lg shadow-md">
             {children}
           </div>
         </main>
         <Footer />
         <ScrollToTop />
+        {/* نهاية محتوى الصفحة */}
+
+        {/* يمكنك هنا (أو في أي مكان تريده بالـ Body) إضافة كود عرض الإعلانات أو مربعات AdSense 
+            مثال: 
+            <ins className="adsbygoogle"
+              style={{ display: "block" }}
+              data-ad-client="ca-pub-9870463298829321"
+              data-ad-slot="1234567890"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            />
+            <Script id="ads-init" strategy="afterInteractive">{`
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            `}</Script>
+        */}
       </body>
     </html>
   );
