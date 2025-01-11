@@ -115,6 +115,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </div>
         </main>
+
         <Footer />
         <ScrollToTop />
         {/* نهاية محتوى الصفحة */}
