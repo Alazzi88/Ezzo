@@ -63,6 +63,7 @@ export default function Main() {
       {/* الحاوية الداخلية التي تحتوي على الودجت */}
 
         <TradingViewWidget />
+  
     
       </div>
   
