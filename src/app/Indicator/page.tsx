@@ -8,21 +8,25 @@ import FAQs from "@/components/FAQs";
 // فيديوهات الشروحات الأساسية
 const videos = [
   {
-    url: "https://www.youtube.com/embed/IWymWx4kYs0?si=2zHXkwnIpjbt172G",
-    title: "الشرح الأول",
+    url: "  https://www.youtube.com/embed/bVdBpeHcF80?si=-PhaLr0T1lgf_uY-",
+    title: "الشرح الاول",
   },
+
   {
-    url: "https://www.youtube.com/embed/szgRHJ8sD-w?si=cltQTk44MrTWXPKS",
+    url: "https://www.youtube.com/embed/DMXkOIfdTtI?si=JgH4vC4QzNCDEM1r",
     title: "الشرح الثاني",
-  },
-  {
-    url: "https://www.youtube.com/embed/BKvL8kzuPpU?si=s9eFf45zOKTCFor7",
+  }, 
+   {
+    url: "https://www.youtube.com/embed/IWymWx4kYs0?si=2zHXkwnIpjbt172G",
     title: "الشرح الثالث",
   },
-  {
-    url: "https://www.youtube.com/embed/wp4Rb0jwY_k?si=MPS82tz6iENpF-wN",
-    title: "الشرح الرابع",
-  },
+
+
+
+
+
+
+
 ];
 
 // فيديوهات الشروحات المتقدمة مع حقلين جديدين: shortDescription, fullDescription, image
