@@ -202,7 +202,7 @@ const HomePage = () => {
           </ul>
         </section>
 
-        {/* دعوة للمبتدئين */}
+        {/* دعوة للمبتدئين + زر التيليجرام */}
         <section className="my-6 md:my-10 text-center">
           <p className="text-xs md:text-base text-gray-300 mb-4">
             إذا كنت مبتدئًا، يمكنك زيارة قناتنا التعليمية على تليجرام
@@ -216,6 +216,179 @@ const HomePage = () => {
             <TelegramButton />
           </a>
         </section>
+
+        {/* شروحات بالفيديو للمبتدئين */}
+      {/* شروحات بالفيديو للمبتدئين */}
+<section className="my-6 md:my-10">
+  <h2 className="text-lg md:text-2xl font-bold text-orange-500 mb-4">شروحات للمبتدئين</h2>
+  <p className="text-gray-300 text-xs md:text-base mb-4">
+    فيما يلي بعض الفيديوهات التعليمية التي تشرح مبادئ الأوبشن للمبتدئين.
+  </p>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {/* الفيديو 1 */}
+    <div className="relative rounded-xl p-[2px] bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 hover:from-orange-400 hover:to-orange-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+      <div className="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02]">
+        <div className="relative w-full h-0 pb-[56.25%]">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-xl"
+            src="https://www.youtube.com/embed/C--tTWoqr4I?si=SUM2ssJkjQx441Bq"
+            title="كيفية فتح حساب جديد في دراية"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        {/* شريط العنوان السفلي مع تعديل bottom */}
+        <div className="absolute bottom-12 left-0 w-full p-4 bg-black/80">
+          <p className="text-orange-500 font-bold text-lg">
+            كيفية فتح حساب جديد في دراية
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* الفيديو 2 */}
+    <div className="relative rounded-xl p-[2px] bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 hover:from-orange-400 hover:to-orange-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+      <div className="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02]">
+        <div className="relative w-full h-0 pb-[56.25%]">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-xl"
+            src="https://www.youtube.com/embed/CRtCKG0WGzg?si=IvtLfk9wsLRnuxG1"
+            title="كيفية فتح حساب دراية جلوبال"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        <div className="absolute bottom-12 left-0 w-full p-4 bg-black/80">
+          <p className="text-orange-500 font-bold text-lg">
+            كيفية فتح حساب دراية جلوبال
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* الفيديو 3 */}
+    <div className="relative rounded-xl p-[2px] bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 hover:from-orange-400 hover:to-orange-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+      <div className="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02]">
+        <div className="relative w-full h-0 pb-[56.25%]">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-xl"
+            src="https://www.youtube.com/embed/nYTo6aSIUZ4?si=lv9WGI13TJN-EbT_"
+            title="فتح حساب تجريبي في دراية جلوبال"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        <div className="absolute bottom-12 left-0 w-full p-4 bg-black/80">
+          <p className="text-orange-500 font-bold text-lg">
+            فتح حساب تجريبي في دراية جلوبال
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* الفيديو 4 */}
+    <div className="relative rounded-xl p-[2px] bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 hover:from-orange-400 hover:to-orange-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+      <div className="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02]">
+        <div className="relative w-full h-0 pb-[56.25%]">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-xl"
+            src="https://www.youtube.com/embed/ALnlQhRK2x4?si=f68cRbI0WeIduNTi"
+            title="ايداع وسحب الاموال"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        <div className="absolute bottom-12 left-0 w-full p-4 bg-black/80">
+          <p className="text-orange-500 font-bold text-lg">
+            ايداع وسحب الاموال
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* الفيديو 5 */}
+    <div className="relative rounded-xl p-[2px] bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 hover:from-orange-400 hover:to-orange-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+      <div className="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02]">
+        <div className="relative w-full h-0 pb-[56.25%]">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-xl"
+            src="https://www.youtube.com/embed/r5oLATw58LY?si=X_qAThf2rFsGd8PU"
+            title="طريقة تفعيل الأسعار المباشرة"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        <div className="absolute bottom-12 left-0 w-full p-4 bg-black/80">
+          <p className="text-orange-500 font-bold text-lg">
+            طريقة تفعيل الأسعار المباشرة
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* الفيديو 6 */}
+    <div className="relative rounded-xl p-[2px] bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 hover:from-orange-400 hover:to-orange-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+      <div className="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02]">
+        <div className="relative w-full h-0 pb-[56.25%]">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-xl"
+            src="https://www.youtube.com/embed/6nY_wWcwLbI?si=YVzpld2OvUeXMYV_"
+            title="دخول صفقة والخروج منها واوامر دراية"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        <div className="absolute bottom-12 left-0 w-full p-4 bg-black/80">
+          <p className="text-orange-500 font-bold text-lg">
+            دخول صفقة والخروج منها واوامر دراية
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* الفيديو 7 */}
+    <div className="relative rounded-xl p-[2px] bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 hover:from-orange-400 hover:to-orange-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+      <div className="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02]">
+        <div className="relative w-full h-0 pb-[56.25%]">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-xl"
+            src="https://www.youtube.com/embed/MjPDWqQHn-U?si=26JFH6hQJPfiRLLJ"
+            title="مفهوم الاوبشن الامريكي"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        <div className="absolute bottom-12 left-0 w-full p-4 bg-black/80">
+          <p className="text-orange-500 font-bold text-lg">
+            مفهوم الاوبشن الامريكي
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* الفيديو 8 */}
+    <div className="relative rounded-xl p-[2px] bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 hover:from-orange-400 hover:to-orange-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+      <div className="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02]">
+        <div className="relative w-full h-0 pb-[56.25%]">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-xl"
+            src="https://www.youtube.com/embed/nYDU9gTBcJo?si=TwiQhUdgC2vhx7sY"
+            title="شرح ودخول صفقات في تطبيق webull والاستفاده منه"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        <div className="absolute bottom-12 left-0 w-full p-4 bg-black/80">
+          <p className="text-orange-500 font-bold text-lg">
+            شرح ودخول صفقات في تطبيق webull والاستفاده منه
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       </main>
     </div>
   );
