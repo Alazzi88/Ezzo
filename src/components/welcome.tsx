@@ -35,7 +35,7 @@ const AnimatedCounter: React.FC = () => {
       <p className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600">
         {count}
       </p>
-      <p className="text-2xl font-medium text-gray-200 mt-2">عميل يثقون في مؤشرنا</p>
+      <p className="text-2xl font-medium text-gray-200 mt-2">عميل يثق في مؤشرنا</p>
     </div>
   );
 };
